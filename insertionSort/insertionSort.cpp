@@ -10,7 +10,7 @@ std::vector<int> insertionSort(std::vector<int> arr)
         return arr;
     }
 
-    for (int i = 1; i < n - 1; i++)
+    for (int i = 1; i < n; i++)
     {
         int key = arr[i];
         int j = i - 1;
