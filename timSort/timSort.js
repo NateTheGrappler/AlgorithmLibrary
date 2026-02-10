@@ -75,7 +75,6 @@ function timSort(arr) {
         let runEnd = findRun(arr, i, n);
         let runLen = runEnd - i;
 
-        // Extend short runs to minRun using insertion sort
         if (runLen < minRun) {
             let end = Math.min(i + minRun, n);
             insertionSort(arr, i, end - 1);
